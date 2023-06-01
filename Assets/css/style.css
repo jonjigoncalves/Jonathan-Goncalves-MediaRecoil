@@ -1,18 +1,18 @@
 /* .root{ (couldnt get it to work)
     --headerFont: antiquewhite;
     --center-text: center;
-    } */ 
-    
+    } */
 
-body{
+
+body {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     line-height: 1.5;
     background-image: url(../grain\ background.jpg);
 }
 
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,38 +20,40 @@ header{
     padding-left: 30px;
     background-color: rgb(35, 104, 168);
 }
+
 nav ul {
     display: flex;
     justify-content: space-between;
     font-size: 150%;
     list-style: none;
-   
+
 }
 
-nav ul li{
+nav ul li {
     margin-right: 20px;
 }
 
-nav a{
+header nav a {
     color: whitesmoke;
     text-decoration: none;
-    
+
 
 }
 
-nav ul li :hover{
+nav ul li :hover {
     background-color: rgb(12, 194, 139);
-   text-decoration: underline;
- 
+    text-decoration: underline;
+
 }
+
 header h1 {
     font-size: 250%;
     color: whitesmoke;
- 
-    
+
+
 }
 
-section.banner h1{
+section.banner h1 {
     position: absolute;
     color: black;
     top: 30%;
@@ -59,51 +61,54 @@ section.banner h1{
     text-align: center;
     z-index: 1;
     width: 100%;
-    
-} 
 
-section.banner{
+}
+
+section.banner {
     display: block;
     position: relative;
-    
-    
-    
+    pointer-events: none;
+
+
+
 }
 
 section.about {
     padding-top: 50px;
     color: black;
     display: flex;
-   
-         
-   
+
+
+
 }
-section.about h1{
+
+section.about h1 {
     color: rgb(8, 46, 129);
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 300%;
+    font-size: 100px;
     padding: 0px 200px 0px 50px;
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-    
+
+
 }
 
 
-
-section.about p{
+section.about p {
     display: inline-block;
     font-size: 25px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-right: 50px;
 
 }
-div{
+
+div {
     display: flex;
 }
-section.work {
+
+article.work {
     padding-top: 100px;
     padding-right: 50px;
     color: black;
@@ -111,29 +116,139 @@ section.work {
     justify-content: space-between;
     align-items: center;
 
-      
+
+
 }
 
-section.work h3{
+article.work h3 {
     color: rgb(8, 46, 129);
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 300%;
+    font-size: 100px;
     padding: 100px 200px 0px 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        
+
 }
-section.work div img{
+
+article.work div img {
     display: flex;
     flex-direction: column;
-   margin-right: 30px;
-           
-}
-figcaption{
-    font-size: 30px;
-} 
+    align-items: center;
+    max-width: 100%;
 
-img:hover{
-    transform:scale(1.5);
+
+
+}
+
+figcaption {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+
+}
+
+img:hover {
+    transform: scale(1.5);
+}
+
+footer {
+    display: flex;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+}
+
+h4 {
+    color: rgb(8, 46, 129);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 100px;
+    padding: 100px 200px 0px 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer nav a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-left: 100px;
+    padding-bottom: 10px;
+
+    font-size: 32px;
+}
+
+footer nav ul.li :hover {
+    background-color: rgb(87, 121, 196);
+    text-decoration: underline;
+    margin-right: 20px;
+
+}
+
+/* Media Styles */
+@media(min-width: 600px) {
+    section.banner h1 {
+        font-size: 250%;
+    }
+
+    section.about h1 {
+        font-size: 250%;
+    }
+
+    article.work h3 {
+        font-size: 250%;
+    }
+
+    h4 {
+        font-size: 250%;
+    }
+}
+
+@media(min-width: 1000px) {
+    section.banner h1 {
+        font-size: 350%;
+    }
+
+    section.about h1 {
+        font-size: 350%;
+    }
+
+    article.work h3 {
+        font-size: 350%;
+    }
+
+    h4 {
+        font-size: 350%;
+    }
+}
+
+@media(min-width: 1500px) {
+    section.banner h1 {
+        font-size: 450%;
+    }
+
+    section.about h1 {
+        font-size: 450%;
+    }
+
+    article.work h3 {
+        font-size: 450%;
+    }
+
+    h4 {
+        font-size: 450%;
+    }
 }
