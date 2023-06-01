@@ -1,0 +1,139 @@
+/* .root{ (couldnt get it to work)
+    --headerFont: antiquewhite;
+    --center-text: center;
+    } */ 
+    
+
+body{
+    display: flex;
+    flex-direction:column;
+    line-height: 1.5;
+    background-image: url(../grain\ background.jpg);
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    padding-left: 30px;
+    background-color: rgb(35, 104, 168);
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 150%;
+    list-style: none;
+   
+}
+
+nav ul li{
+    margin-right: 20px;
+}
+
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    
+
+}
+
+nav ul li :hover{
+    background-color: rgb(12, 194, 139);
+   text-decoration: underline;
+ 
+}
+header h1 {
+    font-size: 250%;
+    color: whitesmoke;
+ 
+    
+}
+
+section.banner h1{
+    position: absolute;
+    color: black;
+    top: 30%;
+    font-size: 40px;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    
+} 
+
+section.banner{
+    display: block;
+    position: relative;
+    
+    
+    
+}
+
+section.about {
+    padding-top: 50px;
+    color: black;
+    display: flex;
+   
+         
+   
+}
+section.about h1{
+    color: rgb(8, 46, 129);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 300%;
+    padding: 0px 200px 0px 50px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+
+
+
+section.about p{
+    display: inline-block;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 50px;
+
+}
+div{
+    display: flex;
+}
+section.work {
+    padding-top: 100px;
+    padding-right: 50px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+      
+}
+
+section.work h3{
+    color: rgb(8, 46, 129);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 300%;
+    padding: 100px 200px 0px 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+}
+section.work div img{
+    display: flex;
+    flex-direction: column;
+   margin-right: 30px;
+           
+}
+figcaption{
+    font-size: 30px;
+} 
+
+img:hover{
+    transform:scale(1.5);
+}
