@@ -104,26 +104,37 @@ section.about p {
 
 }
 
-div {
-    display: flex;
-}
-
-article.work {
-    padding-top: 100px;
-    padding-right: 50px;
-    color: black;
+article {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 100px;
+    padding-right: 50px;
+    color: black;
+}
+
+div.img {
+    display: flex;
+
+
+}
+
+figure{
+    text-align: center;
+}
+article.work {
+
+    color: rgb(8, 46, 129);
+    font-size: 20px;
+    padding: 100px 200px 0px 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 
 
 }
 
-article.work h3 {
+.work.chelsea {
     color: rgb(8, 46, 129);
-    display: flex;
-    flex-direction: column;
     align-items: center;
     font-size: 100px;
     padding: 100px 200px 0px 50px;
@@ -131,15 +142,7 @@ article.work h3 {
 
 }
 
-article.work div img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
 
-
-
-}
 
 figcaption {
     display: flex;
